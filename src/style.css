@@ -1,0 +1,48 @@
+html{
+    font-size: 100px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: initial;
+    font-family: 'Gotu', sans-serif;
+}
+
+.current-weather{
+    width: calc(100% - 32px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 8px 16px;
+    background-color: rgba(255,255,255,.2);
+    border: 2px solid #fff;
+}
+
+.current-weather__title{
+    width: 100%;
+    text-align: center;
+}
+
+.current-weather__deg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.current-weather__deg-icon{
+    width: 16px;
+    margin-right: 4px;
+}
+
+.current-weather__deg-val{
+    font-size: 46px;
+    font-weight: 600;
+}
+
+
+body > div:not(#root){
+    display: none;
+    opacity: 0;
+}
